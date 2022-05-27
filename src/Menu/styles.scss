@@ -1,0 +1,85 @@
+@import "../variables.scss";
+
+.menu- {
+  &logo {
+    width: 100px;
+    height: 70px;
+    object-fit: contain;
+  }
+  &section {
+    padding-left: 5px;
+  }
+  &scroll-wrapper {
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    padding-right: 24px;
+    padding-bottom: 20px;
+  }
+  &main-container {
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    background-color: $bg-color;
+    color: $menu-link;
+    flex-shrink: 1;
+    padding-left: 24px;
+    scrollbar-color: green;
+    & .active {
+      color: $menu-link-active;
+    }
+  }
+  &section-name {
+    color: $menu-section;
+    padding: 25px 0;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: default;
+  }
+  &section-title {
+    font-family: hkgrotesk, sans-serif;
+    padding-left: 10px;
+    margin-right: auto;
+    font-size: 1rem;
+    text-transform: capitalize;
+  }
+  &section-wrapper {
+    cursor: pointer;
+    padding: 10px 0;
+    &:hover {
+      color: $menu-link-active;
+    }
+  }
+  &section-item {
+    color: $menu-link;
+    font-size: 15px;
+    padding: 10px 0;
+    &:before {
+      width: 5px;
+      border-bottom: 1px solid $menu-section;
+      content: "";
+      display: block;
+      margin-right: 15px;
+      margin-left: 5px;
+    }
+    &.active:before {
+      border-color: $menu-link-active;
+    }
+    &:hover {
+      color: $menu-link-active;
+      &:before {
+        border-color: $menu-link-active;
+      }
+    }
+  }
+  &new {
+    padding: 5px 10px;
+    background-color: $bg-new;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: 600;
+    color: $white;
+  }
+}

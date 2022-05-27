@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <section class="menu-main-container">
+        <div class="flex column align-center">
+          <a href=".">
+            <img class="menu-logo" src="../assets/images/logo.png" />
+          </a>
+        </div>
+        <div class="menu-scroll-wrapper">
+          <p class="menu-section-name">Menu</p>
+          <div class="menu-section">
+            <div class="menu-section-wrapper flex align-center">
+              <i class="ri-dashboard-2-line active"></i>
+              <h3 class="menu-section-title active">Dashboard</h3>
+              <i class="ri-arrow-down-s-line active"></i>
+            </div>
+            <div class="menu-section-items-wrapper">
+              <button type="button" class="menu-section-item flex align-center">
+                Analytics
+              </button>
+              <button type="button" class="menu-section-item flex align-center">
+                CRM
+              </button>
+              <button
+                type="button"
+                class="menu-section-item active flex align-center"
+              >
+                Ecommerce
+              </button>
+              <button type="button" class="menu-section-item flex align-center">
+                Crypto
+              </button>
+              <button type="button" class="menu-section-item flex align-center">
+                Projects
+              </button>
+            </div>
+          </div>
+          <div class="menu-section">
+            <div class="menu-section-wrapper flex align-center">
+              <i class="ri-apps-line"></i>
+              <h3 class="menu-section-title">Apps</h3>
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+            <div class="menu-section-wrapper flex align-center">
+              <i class="ri-layout-line"></i>
+              <h3 class="menu-section-title">Layouts</h3>
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+            <p class="menu-section-name">Pages</p>
+            <div class="menu-section-wrapper flex align-center">
+              <i class="ri-account-circle-line"></i>
+              <h3 class="menu-section-title">Authentication</h3>
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+            <div class="menu-section-wrapper flex align-center">
+              <i class="ri-pages-line"></i>
+              <h3 class="menu-section-title">Pages</h3>
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+            <div class="menu-section-wrapper flex align-center">
+              <i class="ri-rocket-line"></i>
+              <h3 class="menu-section-title">Landing</h3>
+              <div class="menu-new">New</div>
+            </div>
+            <p class="menu-section-name">Components</p>
+            <div class="menu-section-wrapper flex align-center">
+              <i class="ri-pencil-ruler-2-line"></i>
+              <h3 class="menu-section-title">Base UI</h3>
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+            <div class="menu-section-wrapper flex align-center">
+              <i class="ri-stack-line"></i>
+              <h3 class="menu-section-title">Advance UI</h3>
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+            <div class="menu-section-wrapper flex align-center">
+              <i class="ri-honour-line"></i>
+              <h3 class="menu-section-title">Widgets</h3>
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+            <div class="menu-section-wrapper flex align-center">
+              <i class="ri-file-list-3-line"></i>
+              <h3 class="menu-section-title">Forms</h3>
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+            <div class="menu-section-wrapper flex align-center">
+              <i class="ri-layout-grid-line"></i>
+              <h3 class="menu-section-title">Tables</h3>
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+            <div class="menu-section-wrapper flex align-center">
+              <i class="ri-pie-chart-line"></i>
+              <h3 class="menu-section-title">Charts</h3>
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+            <div class="menu-section-wrapper flex align-center">
+              <i class="ri-compasses-2-line"></i>
+              <h3 class="menu-section-title">Icons</h3>
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+            <div class="menu-section-wrapper flex align-center">
+              <i class="ri-map-pin-line"></i>
+              <h3 class="menu-section-title">Maps</h3>
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+            <div class="menu-section-wrapper flex align-center">
+              <i class="ri-share-line"></i>
+              <h3 class="menu-section-title">Multi level</h3>
+              <i class="ri-arrow-right-s-line"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="content-container">
+        <header class="header">
+          <div class="header-wrapper-left">
+            <div class="burger-wrapper">
+              <div class="burger-line"></div>
+              <div class="burger-line"></div>
+              <div class="burger-line"></div>
+            </div>
+            <div class="search-wrapper">
+              <i class="mdi mdi-magnify search-widget-icon search-icon"></i>
+              <input type="text" class="search-input" placeholder="Search..." />
+            </div>
+          </div>
+          <div class="header-wrapper-right">
+            <div class="header-buttons-wrapper">
+              <button class="header-button-wrapper">
+                <img
+                  width="20"
+                  height="20"
+                  src="../assets/images/flag.svg"
+                  alt="country"
+                  class="header-button-language"
+                /></button
+              ><button class="header-button-wrapper">
+                <span
+                  class="iconify header-button"
+                  data-icon="bx:category-alt"
+                ></span>
+              </button>
+              <button class="header-button-wrapper">
+                <span
+                  class="iconify header-button"
+                  data-icon="bx:shopping-bag"
+                ></span>
+                <div class="cart counter-wrapper">
+                  <span class="cart counter">5</span>
+                </div>
+              </button>
+              <button class="header-button-wrapper">
+                <span
+                  class="iconify header-button"
+                  data-icon="bytesize:fullscreen"
+                ></span>
+              </button>
+              <button class="header-button-wrapper">
+                <span
+                  class="iconify header-button"
+                  data-icon="bytesize:moon"
+                ></span></button
+              ><button class="header-button-wrapper">
+                <span
+                  class="iconify header-button"
+                  data-icon="akar-icons:bell"
+                ></span>
+                <div class="notification counter-wrapper">
+                  <span class="notification counter">3</span>
+                </div>
+              </button>
+            </div>
+            <button class="header-profile-wrapper">
+              <img
+                src="../assets/images/avatar.jpeg"
+                alt="profile-picture"
+                class="header-profile-image"
+              />
+              <div class="header-profile-info">
+                <h4 class="header-profile-name">Anna Adame</h4>
+                <p class="header-profile-position">Founder</p>
+              </div>
+            </button>
+          </div>
+        </header>
+        <div class="content-scroll">
+          <section class="breadcrumbs-container">
+            <h2 class="page-title">Dashboard</h2>
+            <div class="breadcrumbs-wrapper">
+              <a href="" class="breadcrumbs-main">Dashboard</a>
+              <i class="ri-arrow-right-s-line breadcrumbs-arrow"></i>
+              <span class="breadcrumbs-second">Dashboard</span>
+            </div>
+          </section>
+          <div class="content-wrapper-main">
+            <div class="content-wrapper">
+              <section class="total">
+                <div class="total-top-wrapper">
+                  <div class="total-title-wrapper">
+                    <h4 class="total-title">Good Morning, Anna!</h4>
+                    <p class="total-subtitle">
+                      Here's what's happening with your store today.
+                    </p>
+                  </div>
+                  <div class="total-extra-wrapper">
+                    <div class="total-calendar-container">
+                      <div class="calendar">
+                        <div class="calendar-text-wrapper">
+                          <span class="calendar-text"
+                            >01 Jan 2022 to 31 Jan 2022</span
+                          >
+                        </div>
+                        <div class="calendar-icon-wrapper">
+                          <i class="ri-calendar-2-line icon"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="total-add-wrapper">
+                      <button class="total-add-container">
+                        <i class="ri-add-circle-line align-middle me-1"></i>
+                        <span class="total-add-text">Add Product</span>
+                      </button>
+                    </div>
+                    <div class="total-recent-wrapper">
+                      <button class="total-recent-container">
+                        <i class="ri-pulse-line"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="total-bottom-wrapper">
+                  <ul class="total-boxes-container">
+                    <li class="total-box">
+                      <div class="box-title-container">
+                        <h5 class="box-title">Total Earnings</h5>
+                        <div class="price-change-container success">
+                          <i
+                            class="ri-arrow-right-up-line fs-13 align-middle"
+                          ></i>
+                          <p class="price-change-text">+16.24 %</p>
+                        </div>
+                      </div>
+                      <div class="box-info-container">
+                        <div class="info-price-container">
+                          <p class="info-price">$559.25k</p>
+                          <a href="" class="info-link">View net earnings</a>
+                        </div>
+                        <div class="info-icon-container earning">
+                          <span
+                            class="iconify info-icon"
+                            data-icon="bx:dollar-circle"
+                          ></span>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="total-box">
+                      <div class="box-title-container">
+                        <h5 class="box-title">Orders</h5>
+                        <div class="price-change-container failure">
+                          <i
+                            class="ri-arrow-right-down-line fs-13 align-middle"
+                          ></i>
+                          <p class="price-change-text">-3.57 %</p>
+                        </div>
+                      </div>
+                      <div class="box-info-container">
+                        <div class="info-price-container">
+                          <p class="info-price">36,894</p>
+                          <a href="" class="info-link">View all orders</a>
+                        </div>
+                        <div class="info-icon-container orders">
+                          <span
+                            class="iconify info-icon"
+                            data-icon="clarity:shopping-bag-line"
+                          ></span>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="total-box">
+                      <div class="box-title-container">
+                        <h5 class="box-title">Customers</h5>
+                        <div class="price-change-container success">
+                          <i
+                            class="ri-arrow-right-up-line fs-13 align-middle"
+                          ></i>
+                          <p class="price-change-text">+29.08 %</p>
+                        </div>
+                      </div>
+                      <div class="box-info-container">
+                        <div class="info-price-container">
+                          <p class="info-price">183.35M</p>
+                          <a href="" class="info-link">See details</a>
+                        </div>
+                        <div class="info-icon-container customers">
+                          <span
+                            class="iconify info-icon"
+                            data-icon="carbon:user-avatar"
+                          ></span>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="total-box">
+                      <div class="box-title-container">
+                        <h5 class="box-title">MY BALANCE</h5>
+                        <div class="price-change-container">
+                          <p class="price-change-text">+0.00 %</p>
+                        </div>
+                      </div>
+                      <div class="box-info-container">
+                        <div class="info-price-container">
+                          <p class="info-price">$165.89k</p>
+                          <a href="" class="info-link">Withdraw money</a>
+                        </div>
+                        <div class="info-icon-container balance">
+                          <span
+                            class="iconify info-icon"
+                            data-icon="bx:wallet"
+                          ></span>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+              <div class="flex-container graph">
+                <section class="graph-container">
+                  <div class="graph-top-container">
+                    <h6 class="graph-title">Revenue</h6>
+                    <div class="graph-buttons-container">
+                      <button class="graph-button">All</button>
+                      <button class="graph-button">1M</button>
+                      <button class="graph-button">6M</button>
+                      <button class="graph-button inactive">1Y</button>
+                    </div>
+                  </div>
+                  <div class="graph-sections-container flex-container">
+                    <div class="graph-section">
+                      <p class="graph-section-value">7,585</p>
+                      <p class="graph-section-name">Orders</p>
+                    </div>
+                    <div class="graph-section">
+                      <p class="graph-section-value">$22.89k</p>
+                      <p class="graph-section-name">Earnings</p>
+                    </div>
+                    <div class="graph-section">
+                      <p class="graph-section-value">367</p>
+                      <p class="graph-section-name">Refunds</p>
+                    </div>
+                    <div class="graph-section">
+                      <p class="graph-section-value colored">18.92%</p>
+                      <p class="graph-section-name">Conversation Ratio</p>
+                    </div>
+                  </div>
+                  <img
+                    class="graph-picture"
+                    src="./assets/images/graph.png"
+                    alt="Graph picture"
+                  />
+                </section>
+                <section class="map">
+                  <div class="map-top-container">
+                    <h6 class="map-title">Sales by Locations</h6>
+                    <button class="map-button">Export Report</button>
+                  </div>
+                  <div class="map-picture-wrapper">
+                    <img
+                      src="./assets/images/map.png"
+                      alt="Map picture"
+                      class="map-picture"
+                    />
+                  </div>
+                </section>
+              </div>
+              <div class="selling flex-container">
+                <section class="selling-products">
+                  <div class="content-title-container flex-container">
+                    <h6 class="title">Best Selling Products</h6>
+                    <button class="sort">
+                      <span class="sort-text">SORT BY: </span
+                      ><span class="sort-value">Today</span>
+                      <i class="mdi mdi-chevron-down ms-1"></i>
+                    </button>
+                  </div>
+                  <ul class="selling-products-content">
+                    <li class="product">
+                      <div class="product-name">
+                        <div class="product-img-container">
+                          <img
+                            src="./assets/images/product.png"
+                            alt="Product image"
+                            class="product-img"
+                          />
+                        </div>
+                        <div class="product-info-container">
+                          <p class="product-info-value">Branded T-Shirts</p>
+                          <p class="product-info-name">24 Apr 2021</p>
+                        </div>
+                      </div>
+                      <div class="product-info-container">
+                        <p class="product-info-value">$29.00</p>
+                        <p class="product-info-name">Price</p>
+                      </div>
+                      <div class="product-info-container">
+                        <p class="product-info-value">510</p>
+                        <p class="product-info-name">Stock</p>
+                      </div>
+                      <div class="product-info-container">
+                        <p class="product-info-value">$1,798</p>
+                        <p class="product-info-name">Amount</p>
+                      </div>
+                    </li>
+                    <li class="product">
+                      <div class="product-name">
+                        <div class="product-img-container">
+                          <img
+                            src="./assets/images/product.png"
+                            alt="Product image"
+                            class="product-img"
+                          />
+                        </div>
+                        <div class="product-info-container">
+                          <p class="product-info-value">Branded T-Shirts</p>
+                          <p class="product-info-name">24 Apr 2021</p>
+                        </div>
+                      </div>
+                      <div class="product-info-container">
+                        <p class="product-info-value">$29.00</p>
+                        <p class="product-info-name">Price</p>
+                      </div>
+                      <div class="product-info-container">
+                        <span class="product-info-out">Out of stock</span>
+                        <p class="product-info-name">Stock</p>
+                      </div>
+                      <div class="product-info-container">
+                        <p class="product-info-value">$1,798</p>
+                        <p class="product-info-name">Amount</p>
+                      </div>
+                    </li>
+                    <li class="product">
+                      <div class="product-name">
+                        <div class="product-img-container">
+                          <img
+                            src="./assets/images/product.png"
+                            alt="Product image"
+                            class="product-img"
+                          />
+                        </div>
+                        <div class="product-info-container">
+                          <p class="product-info-value">Branded T-Shirts</p>
+                          <p class="product-info-name">24 Apr 2021</p>
+                        </div>
+                      </div>
+                      <div class="product-info-container">
+                        <p class="product-info-value">$29.00</p>
+                        <p class="product-info-name">Price</p>
+                      </div>
+                      <div class="product-info-container">
+                        <p class="product-info-value">510</p>
+                        <p class="product-info-name">Stock</p>
+                      </div>
+                      <div class="product-info-container">
+                        <p class="product-info-value">$1,798</p>
+                        <p class="product-info-name">Amount</p>
+                      </div>
+                    </li>
+                    <li class="product">
+                      <div class="product-name">
+                        <div class="product-img-container">
+                          <img
+                            src="./assets/images/product.png"
+                            alt="Product image"
+                            class="product-img"
+                          />
+                        </div>
+                        <div class="product-info-container">
+                          <p class="product-info-value">Branded T-Shirts</p>
+                          <p class="product-info-name">24 Apr 2021</p>
+                        </div>
+                      </div>
+                      <div class="product-info-container">
+                        <p class="product-info-value">$29.00</p>
+                        <p class="product-info-name">Price</p>
+                      </div>
+                      <div class="product-info-container">
+                        <span class="product-info-out">Out of stock</span>
+                        <p class="product-info-name">Stock</p>
+                      </div>
+                      <div class="product-info-container">
+                        <p class="product-info-value">$1,798</p>
+                        <p class="product-info-name">Amount</p>
+                      </div>
+                    </li>
+                    <li class="product">
+                      <div class="product-name">
+                        <div class="product-img-container">
+                          <img
+                            src="./assets/images/product.png"
+                            alt="Product image"
+                            class="product-img"
+                          />
+                        </div>
+                        <div class="product-info-container">
+                          <p class="product-info-value">Branded T-Shirts</p>
+                          <p class="product-info-name">24 Apr 2021</p>
+                        </div>
+                      </div>
+                      <div class="product-info-container">
+                        <p class="product-info-value">$29.00</p>
+                        <p class="product-info-name">Price</p>
+                      </div>
+                      <div class="product-info-container">
+                        <p class="product-info-value">510</p>
+                        <p class="product-info-name">Stock</p>
+                      </div>
+                      <div class="product-info-container">
+                        <p class="product-info-value">$1,798</p>
+                        <p class="product-info-name">Amount</p>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="pagination">
+                    <span class="pagination-text"
+                      >Showing <b>5</b> of <b>25</b> Results</span
+                    >
+                    <div class="pagination-items">
+                      <button class="pagination-item">←</button>
+                      <button class="pagination-item">1</button>
+                      <button class="pagination-item active">2</button>
+                      <button class="pagination-item">3</button>
+                      <button class="pagination-item">→</button>
+                    </div>
+                  </div>
+                </section>
+                <section class="sellers">
+                  <div class="content-title-container flex-container">
+                    <h6 class="title">Top Sellers</h6>
+                    <button class="sort">
+                      <span>Report</span>
+                      <i class="mdi mdi-chevron-down ms-1"></i>
+                    </button>
+                  </div>
+
+                  <ul class="sellers-content">
+                    <li class="sellers-item">
+                      <div class="sellers-name">
+                        <div class="sellers-img-container">
+                          <img
+                            src="./assets/images/seller.png"
+                            alt="Selers image"
+                            class="sellers-img"
+                          />
+                        </div>
+                        <div class="sellers-info-container">
+                          <a href="" class="sellers-info-link">
+                            iTest Factory
+                          </a>
+                          <p class="sellers-info-name">Oliver Tyler</p>
+                        </div>
+                      </div>
+                      <div class="sellers-info-container">
+                        <p class="sellers-info-name">Bags and Wallets</p>
+                      </div>
+                      <div class="sellers-info-container">
+                        <p class="sellers-info-value">8547</p>
+                        <p class="sellers-info-name">Stock</p>
+                      </div>
+                      <div class="sellers-info-container">
+                        <p class="sellers-info-name">$541200</p>
+                      </div>
+                      <div class="sellers-info-container">
+                        <h5 class="sellers-info-percent">32%</h5>
+                      </div>
+                      <div class="sellers-info-container">
+                        <i
+                          class="ri-bar-chart-fill text-success fs-16 align-middle ms-2 sellers-info-icon"
+                        ></i>
+                      </div>
+                    </li>
+                    <li class="sellers-item">
+                      <div class="sellers-name">
+                        <div class="sellers-img-container">
+                          <img
+                            src="./assets/images/seller.png"
+                            alt="Selers image"
+                            class="sellers-img"
+                          />
+                        </div>
+                        <div class="sellers-info-container">
+                          <a href="" class="sellers-info-link">
+                            iTest Factory
+                          </a>
+                          <p class="sellers-info-name">Oliver Tyler</p>
+                        </div>
+                      </div>
+                      <div class="sellers-info-container">
+                        <p class="sellers-info-name">Bags and Wallets</p>
+                      </div>
+                      <div class="sellers-info-container">
+                        <p class="sellers-info-value">8547</p>
+                        <p class="sellers-info-name">Stock</p>
+                      </div>
+                      <div class="sellers-info-container">
+                        <p class="sellers-info-name">$541200</p>
+                      </div>
+                      <div class="sellers-info-container">
+                        <h5 class="sellers-info-percent">32%</h5>
+                      </div>
+                      <div class="sellers-info-container">
+                        <i
+                          class="ri-bar-chart-fill text-success fs-16 align-middle ms-2 sellers-info-icon"
+                        ></i>
+                      </div>
+                    </li>
+                    <li class="sellers-item">
+                      <div class="sellers-name">
+                        <div class="sellers-img-container">
+                          <img
+                            src="./assets/images/seller.png"
+                            alt="Selers image"
+                            class="sellers-img"
+                          />
+                        </div>
+                        <div class="sellers-info-container">
+                          <a href="" class="sellers-info-link">
+                            iTest Factory
+                          </a>
+                          <p class="sellers-info-name">Oliver Tyler</p>
+                        </div>
+                      </div>
+                      <div class="sellers-info-container">
+                        <p class="sellers-info-name">Bags and Wallets</p>
+                      </div>
+                      <div class="sellers-info-container">
+                        <p class="sellers-info-value">8547</p>
+                        <p class="sellers-info-name">Stock</p>
+                      </div>
+                      <div class="sellers-info-container">
+                        <p class="sellers-info-name">$541200</p>
+                      </div>
+                      <div class="sellers-info-container">
+                        <h5 class="sellers-info-percent">32%</h5>
+                      </div>
+                      <div class="sellers-info-container">
+                        <i
+                          class="ri-bar-chart-fill text-success fs-16 align-middle ms-2 sellers-info-icon"
+                        ></i>
+                      </div>
+                    </li>
+                    <li class="sellers-item">
+                      <div class="sellers-name">
+                        <div class="sellers-img-container">
+                          <img
+                            src="./assets/images/seller.png"
+                            alt="Selers image"
+                            class="sellers-img"
+                          />
+                        </div>
+                        <div class="sellers-info-container">
+                          <a href="" class="sellers-info-link">
+                            iTest Factory
+                          </a>
+                          <p class="sellers-info-name">Oliver Tyler</p>
+                        </div>
+                      </div>
+                      <div class="sellers-info-container">
+                        <p class="sellers-info-name">Bags and Wallets</p>
+                      </div>
+                      <div class="sellers-info-container">
+                        <p class="sellers-info-value">8547</p>
+                        <p class="sellers-info-name">Stock</p>
+                      </div>
+                      <div class="sellers-info-container">
+                        <p class="sellers-info-name">$541200</p>
+                      </div>
+                      <div class="sellers-info-container">
+                        <h5 class="sellers-info-percent">32%</h5>
+                      </div>
+                      <div class="sellers-info-container">
+                        <i
+                          class="ri-bar-chart-fill text-success fs-16 align-middle ms-2 sellers-info-icon"
+                        ></i>
+                      </div>
+                    </li>
+                    <li class="sellers-item">
+                      <div class="sellers-name">
+                        <div class="sellers-img-container">
+                          <img
+                            src="./assets/images/seller.png"
+                            alt="Selers image"
+                            class="sellers-img"
+                          />
+                        </div>
+                        <div class="sellers-info-container">
+                          <a href="" class="sellers-info-link">
+                            iTest Factory
+                          </a>
+                          <p class="sellers-info-name">Oliver Tyler</p>
+                        </div>
+                      </div>
+                      <div class="sellers-info-container">
+                        <p class="sellers-info-name">Bags and Wallets</p>
+                      </div>
+                      <div class="sellers-info-container">
+                        <p class="sellers-info-value">8547</p>
+                        <p class="sellers-info-name">Stock</p>
+                      </div>
+                      <div class="sellers-info-container">
+                        <p class="sellers-info-name">$541200</p>
+                      </div>
+                      <div class="sellers-info-container">
+                        <h5 class="sellers-info-percent">32%</h5>
+                      </div>
+                      <div class="sellers-info-container">
+                        <i
+                          class="ri-bar-chart-fill text-success fs-16 align-middle ms-2 sellers-info-icon"
+                        ></i>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="pagination">
+                    <span class="pagination-text"
+                      >Showing <b>5</b> of <b>25</b> Results</span
+                    >
+                    <div class="pagination-items">
+                      <button class="pagination-item">←</button>
+                      <button class="pagination-item">1</button>
+                      <button class="pagination-item active">2</button>
+                      <button class="pagination-item">3</button>
+                      <button class="pagination-item">→</button>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="flex-container recent">
+                <section class="visits">
+                  <div class="content-title-container flex-container">
+                    <h6 class="title">Best Selling Products</h6>
+                    <button class="sort">
+                      <span class="sort-text">SORT BY: </span
+                      ><span class="sort-value">Today</span>
+                      <i class="mdi mdi-chevron-down ms-1"></i>
+                    </button>
+                  </div>
+                  <div class="visits-content">
+                    <img
+                      src="./assets/images/visits.png"
+                      alt="Visits graph"
+                      class="visits-img"
+                    />
+                  </div>
+                </section>
+                <section class="orders">
+                  <div class="content-title-container flex-container">
+                    <h6 class="title">Recent Orders</h6>
+                    <button class="generate">
+                      <i class="ri-file-list-3-line align-middle"></i>
+                      <span class="generate-text">Generate Report</span>
+                    </button>
+                  </div>
+                  <div class="orders-table-container">
+                    <table class="orders-table">
+                      <thead>
+                        <tr>
+                          <th>Order ID</th>
+                          <th>Customer</th>
+                          <th>Product</th>
+                          <th>Amount</th>
+                          <th>Vendor</th>
+                          <th>Status</th>
+                          <th>Rating</th>
+                        </tr>
+                      </thead>
+                      <tr>
+                        <td><a href="" class="order-id"> #VZ2112 </a></td>
+                        <td>
+                          <div class="order-customer">
+                            <img
+                              src="./assets/images/avatar.jpeg"
+                              alt="Customer avatar"
+                              class="order-customer-img"
+                            />
+                            <span class="order-customer-name">Alex Smith</span>
+                          </div>
+                        </td>
+                        <td><span class="order-product">Clothes</span></td>
+                        <td><span class="order-amount">$109.00</span></td>
+                        <td>
+                          <span class="order-vendor">Zoetic Fashion</span>
+                        </td>
+                        <td><span class="order-status success">Paid</span></td>
+                        <td>
+                          <div class="order-rating-container">
+                            <span class="order-rating">5.0</span>
+                            <span class="order-votes">(61 votes)</span>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><a href="" class="order-id"> #VZ2112 </a></td>
+                        <td>
+                          <div class="order-customer">
+                            <img
+                              src="./assets/images/avatar.jpeg"
+                              alt="Customer avatar"
+                              class="order-customer-img"
+                            />
+                            <span class="order-customer-name">Alex Smith</span>
+                          </div>
+                        </td>
+                        <td><span class="order-product">Clothes</span></td>
+                        <td><span class="order-amount">$109.00</span></td>
+                        <td>
+                          <span class="order-vendor">Zoetic Fashion</span>
+                        </td>
+                        <td>
+                          <span class="order-status pending">Pending</span>
+                        </td>
+                        <td>
+                          <div class="order-rating-container">
+                            <span class="order-rating">5.0</span>
+                            <span class="order-votes">(61 votes)</span>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><a href="" class="order-id"> #VZ2112 </a></td>
+                        <td>
+                          <div class="order-customer">
+                            <img
+                              src="./assets/images/avatar.jpeg"
+                              alt="Customer avatar"
+                              class="order-customer-img"
+                            />
+                            <span class="order-customer-name">Alex Smith</span>
+                          </div>
+                        </td>
+                        <td><span class="order-product">Clothes</span></td>
+                        <td><span class="order-amount">$109.00</span></td>
+                        <td>
+                          <span class="order-vendor">Zoetic Fashion</span>
+                        </td>
+                        <td><span class="order-status success">Paid</span></td>
+                        <td>
+                          <div class="order-rating-container">
+                            <span class="order-rating">5.0</span>
+                            <span class="order-votes">(61 votes)</span>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><a href="" class="order-id"> #VZ2112 </a></td>
+                        <td>
+                          <div class="order-customer">
+                            <img
+                              src="./assets/images/avatar.jpeg"
+                              alt="Customer avatar"
+                              class="order-customer-img"
+                            />
+                            <span class="order-customer-name">Alex Smith</span>
+                          </div>
+                        </td>
+                        <td><span class="order-product">Clothes</span></td>
+                        <td><span class="order-amount">$109.00</span></td>
+                        <td>
+                          <span class="order-vendor">Zoetic Fashion</span>
+                        </td>
+                        <td><span class="order-status unpaid">Unpaid</span></td>
+                        <td>
+                          <div class="order-rating-container">
+                            <span class="order-rating">5.0</span>
+                            <span class="order-votes">(61 votes)</span>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><a href="" class="order-id"> #VZ2112 </a></td>
+                        <td>
+                          <div class="order-customer">
+                            <img
+                              src="./assets/images/avatar.jpeg"
+                              alt="Customer avatar"
+                              class="order-customer-img"
+                            />
+                            <span class="order-customer-name">Alex Smith</span>
+                          </div>
+                        </td>
+                        <td><span class="order-product">Clothes</span></td>
+                        <td><span class="order-amount">$109.00</span></td>
+                        <td>
+                          <span class="order-vendor">Zoetic Fashion</span>
+                        </td>
+                        <td><span class="order-status success">Paid</span></td>
+                        <td>
+                          <div class="order-rating-container">
+                            <span class="order-rating">5.0</span>
+                            <span class="order-votes">(61 votes)</span>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div class="rightbar">
+              <section class="recent-activity">
+                <h6 class="rightbar-title">RECENT ACTIVITY</h6>
+                <div class="activity-list">
+                  <div class="activity-item">
+                    <div class="activity-left">
+                      <div class="activity-line"></div>
+                      <div class="activity-img success">
+                        <i class="ri-shopping-cart-2-line"></i>
+                      </div>
+                    </div>
+                    <div class="activity-right">
+                      <h6 class="activity-title">Purchase by James Price</h6>
+                      <p class="activity-text">
+                        Product noise evolve smartwatch
+                      </p>
+                      <span class="activity-date">02:14 PM Today</span>
+                    </div>
+                  </div>
+                  <div class="activity-item">
+                    <div class="activity-left">
+                      <div class="activity-line"></div>
+                      <div class="activity-img failure">
+                        <i class="ri-stack-fill"></i>
+                      </div>
+                    </div>
+                    <div class="activity-right">
+                      <h6 class="activity-title">Added new style collection</h6>
+                      <p class="activity-text">By Nesta Technologies</p>
+                      <div class="activity-pictures-wrapper">
+                        <button class="activity-picture-button">
+                          <img
+                            src="./assets/images/clothes.png"
+                            alt="Activity picture"
+                            class="activity-picture"
+                          />
+                        </button>
+                        <button class="activity-picture-button">
+                          <img
+                            src="./assets/images/clothes.png"
+                            alt="Activity picture"
+                            class="activity-picture"
+                          />
+                        </button>
+                        <button class="activity-picture-button">
+                          <img
+                            src="./assets/images/clothes.png"
+                            alt="Activity picture"
+                            class="activity-picture"
+                          />
+                        </button>
+                      </div>
+                      <span class="activity-date">9:47 PM Yesterday</span>
+                    </div>
+                  </div>
+                  <div class="activity-item">
+                    <div class="activity-left">
+                      <div class="activity-line"></div>
+                      <div class="activity-img success">
+                        <img
+                          src="./assets/images/avatar-2.jpeg"
+                          alt="Activity avatar"
+                          class="activity-avatar"
+                        />
+                      </div>
+                    </div>
+                    <div class="activity-right">
+                      <h6 class="activity-title">
+                        Natasha Carey have liked the products
+                      </h6>
+                      <p class="activity-text">
+                        Allow users to like products in your WooCommerce store.
+                      </p>
+                      <span class="activity-date">25 Dec, 2021</span>
+                    </div>
+                  </div>
+                  <div class="activity-item">
+                    <div class="activity-left">
+                      <div class="activity-line"></div>
+                      <div class="activity-img offer">
+                        <i class="mdi mdi-sale fs-14"></i>
+                      </div>
+                    </div>
+                    <div class="activity-right">
+                      <h6 class="activity-title">
+                        Today offers by
+                        <a href="" class="activity-link">Digitech Galaxy </a>
+                      </h6>
+                      <p class="activity-text">
+                        Offer is valid on orders of Rs.500 Or above for selected
+                        products only.
+                      </p>
+                      <span class="activity-date">12 Dec, 2021</span>
+                    </div>
+                  </div>
+                  <div class="activity-item">
+                    <div class="activity-left">
+                      <div class="activity-line"></div>
+                      <div class="activity-img failure">
+                        <i class="ri-bookmark-fill"></i>
+                      </div>
+                    </div>
+                    <div class="activity-right">
+                      <h6 class="activity-title">Favoried Product</h6>
+                      <p class="activity-text">
+                        Esther James have favorited product.
+                      </p>
+                      <span class="activity-date">25 Nov, 2021</span>
+                    </div>
+                  </div>
+                  <div class="activity-item">
+                    <div class="activity-left">
+                      <div class="activity-line"></div>
+                      <div class="activity-img offer">
+                        <i class="mdi mdi-sale fs-14"></i>
+                      </div>
+                    </div>
+                    <div class="activity-right">
+                      <h6 class="activity-title">
+                        Flash sale starting Tomorrow.
+                      </h6>
+                      <p class="activity-text">
+                        Flash sale by
+                        <a href="" class="activity-link">Zoetic Fashion </a>
+                      </p>
+                      <span class="activity-date">22 Oct, 2021</span>
+                    </div>
+                  </div>
+                  <div class="activity-item">
+                    <div class="activity-left">
+                      <div class="activity-line"></div>
+                      <div class="activity-img report">
+                        <i class="ri-line-chart-line"></i>
+                      </div>
+                    </div>
+                    <div class="activity-right">
+                      <h6 class="activity-title">Monthly sales report</h6>
+                      <p class="activity-text">
+                        <span class="activity-warning">2 days left</span>
+                        notification to submit the monthly sales report.
+                        <a href="" class="activity-link-warning"
+                          >Reports Builder</a
+                        >
+                      </p>
+                      <span class="activity-date">15 Oct</span>
+                    </div>
+                  </div>
+                  <div class="activity-item last">
+                    <div class="activity-left">
+                      <div class="activity-line"></div>
+                      <div class="activity-img report">
+                        <img
+                          src="./assets/images/avatar-3.jpeg"
+                          alt="Activity avatar"
+                          class="activity-avatar"
+                        />
+                      </div>
+                    </div>
+                    <div class="activity-right">
+                      <h6 class="activity-title">Frank Hook Commented</h6>
+                      <p class="activity-text comment">
+                        " A product that has reviews is more likable to be sold
+                        than a product. " >
+                      </p>
+                      <span class="activity-date">26 Aug, 2021</span>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="categories">
+                <h6 class="rightbar-title">TOP 10 CATEGORIES</h6>
+                <ol class="categories-list">
+                  <li class="categories-item">
+                    <a href="" class="categories-link">
+                      Mobile & Accessories <span>(10,294)</span>
+                    </a>
+                  </li>
+                  <li class="categories-item">
+                    <a href="" class="categories-link">
+                      Desktop <span>(6,256)</span>
+                    </a>
+                  </li>
+                  <li class="categories-item">
+                    <a href="" class="categories-link">
+                      Electronics <span>(3,479)</span>
+                    </a>
+                  </li>
+                  <li class="categories-item">
+                    <a href="" class="categories-link">
+                      Home & Furniture <span>(2,275)</span>
+                    </a>
+                  </li>
+                  <li class="categories-item">
+                    <a href="" class="categories-link">
+                      Grocery <span>(1,950)</span>
+                    </a>
+                  </li>
+                  <li class="categories-item">
+                    <a href="" class="categories-link">
+                      Grocery <span>(1,950)</span>
+                    </a>
+                  </li>
+                  <li class="categories-item">
+                    <a href="" class="categories-link">
+                      Grocery <span>(1,950)</span>
+                    </a>
+                  </li>
+                  <li class="categories-item">
+                    <a href="" class="categories-link">
+                      Grocery <span>(1,950)</span>
+                    </a>
+                  </li>
+                  <li class="categories-item">
+                    <a href="" class="categories-link">
+                      Grocery <span>(1,950)</span>
+                    </a>
+                  </li>
+                  <li class="categories-item">
+                    <a href="" class="categories-link">
+                      Grocery <span>(1,950)</span>
+                    </a>
+                  </li>
+                </ol>
+                <div class="categories-all-container">
+                  <a href="" class="categories-all">View all Categories</a>
+                </div>
+              </section>
+              <section class="reviews">
+                <h6 class="rightbar-title">PRODUCTS REVIEWS</h6>
+                <div class="reviews-item">
+                  <img
+                    src="./assets/images/avatar-2.jpeg"
+                    alt=""
+                    class="reviews-item-img"
+                  />
+                  <div class="reviews-info">
+                    <p class="reviews-text">
+                      " The product is very beautiful. I like it. "
+                    </p>
+                    <div class="reviews-rating">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                    </div>
+                    <p class="reviews-author">- by <i>Nancy Martino</i></p>
+                  </div>
+                </div>
+                <div class="reviews-item">
+                  <img
+                    src="./assets/images/seller.png"
+                    alt=""
+                    class="reviews-item-img"
+                  />
+                  <div class="reviews-info">
+                    <p class="reviews-text">
+                      " Great product and looks great, lots of features. "
+                    </p>
+                    <div class="reviews-rating">
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-fill"></i>
+                      <i class="ri-star-half-fill"></i>
+                    </div>
+                    <p class="reviews-author">- by <i>Nancy Martino</i></p>
+                  </div>
+                </div>
+              </section>
+              <section class="customer">
+                <h6 class="rightbar-title">CUSTOMER REVIEWS</h6>
+                <div class="customer-total">
+                  <div class="stars-container">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-half-fill"></i>
+                  </div>
+                  <span class="stars-total">4.5 out of 5</span>
+                </div>
+                <p class="customer-total-text">Total 5.50k reviews</p>
+                <div class="customer-progress-container">
+                  <div class="customer-progress-line">
+                    <span class="line-name">5 star </span>
+                    <div class="line-visual">
+                      <div
+                        class="line-visual-bar success"
+                        style="width: 60%"
+                      ></div>
+                    </div>
+                    <span class="line-score">2758</span>
+                  </div>
+                  <div class="customer-progress-line">
+                    <span class="line-name">4 star </span>
+                    <div class="line-visual">
+                      <div
+                        class="line-visual-bar success"
+                        style="width: 50%"
+                      ></div>
+                    </div>
+                    <span class="line-score">1063</span>
+                  </div>
+                  <div class="customer-progress-line">
+                    <span class="line-name">3 star </span>
+                    <div class="line-visual">
+                      <div
+                        class="line-visual-bar pending"
+                        style="width: 40%"
+                      ></div>
+                    </div>
+                    <span class="line-score">997</span>
+                  </div>
+                  <div class="customer-progress-line">
+                    <span class="line-name">2 star </span>
+                    <div class="line-visual">
+                      <div
+                        class="line-visual-bar success"
+                        style="width: 4%"
+                      ></div>
+                    </div>
+                    <span class="line-score">227</span>
+                  </div>
+                  <div class="customer-progress-line">
+                    <span class="line-name">1 star </span>
+                    <div class="line-visual">
+                      <div
+                        class="line-visual-bar failure"
+                        style="width: 10%"
+                      ></div>
+                    </div>
+                    <span class="line-score">408</span>
+                  </div>
+                </div>
+              </section>
+              <section class="invite-container">
+                <img
+                  src="./assets/images/giftbox.png"
+                  alt="Invite picture"
+                  class="invite-img"
+                />
+                <h6 class="invite-title">Invite New Seller</h6>
+                <p class="invite-text">
+                  Refer a new seller to us and earn $100 per refer.
+                </p>
+                <button class="invite-button">
+                  <div class="invite-icon-container">
+                    <i
+                      class="ri-mail-fill label-icon align-middle rounded-pill fs-16 me-2"
+                    ></i>
+                  </div>
+                  <p class="invite-button-text">Invite now</p>
+                </button>
+              </section>
+            </div>
+          </div>
+          <footer class="footer">
+            <span class="footer-year">2022 © Velzon.</span
+            ><span class="footer-team">Design & Develop by Themesbrand</span>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,285 @@
+@import "../variables.scss";
+
+.rightbar {
+  width: 280px;
+  padding: 16px;
+  padding-right: 0;
+  @media (max-width: 1700px) {
+    display: none;
+  }
+  &-title {
+    color: $breadcrumb-second;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    padding-bottom: 30px;
+  }
+  .recent {
+    &-activity {
+    }
+  }
+  .activity {
+    &-list {
+      max-height: 410px;
+      overflow: scroll;
+      padding-right: 16px;
+    }
+    &-item {
+      display: flex;
+      position: relative;
+      padding-bottom: 15px;
+      &.last {
+        .activity-line {
+          display: none;
+        }
+      }
+    }
+    &-line {
+      position: absolute;
+      top: 26px;
+      left: 12px;
+      height: calc(100% - 26px);
+      border-left: 1px dashed $border-color;
+    }
+    &-img {
+      width: 26px;
+      height: 26px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100%;
+      margin-right: 15px;
+      font-size: 12px;
+      overflow: hidden;
+      &.success {
+        background-color: rgba(10, 179, 156, 0.18);
+        color: $success;
+      }
+      &.failure {
+        background-color: rgba(240, 101, 72, 0.18);
+        color: $failure;
+      }
+      &.offer {
+        background-color: rgb(53, 119, 241);
+        color: $white;
+      }
+      &.report {
+        background-color: rgba(41, 156, 219, 0.18);
+        color: $blue;
+      }
+    }
+    &-title {
+      color: $header-button;
+      font-size: 13px;
+      font-weight: 500;
+      padding-bottom: 5px;
+    }
+    &-link {
+      text-decoration: none;
+      color: $blue;
+      &-warning {
+        color: $pending;
+      }
+    }
+    &-text {
+      color: $breadcrumb-second;
+      font-size: 13px;
+      &.comment {
+        font-style: italic;
+      }
+    }
+    &-date {
+      font-size: 11px;
+      color: $breadcrumb-second;
+    }
+    &-pictures {
+      &-wrapper {
+        margin-top: 5px;
+        display: flex;
+        padding: 4px;
+        border: 1px dashed $border-color;
+      }
+    }
+    &-picture {
+      width: 47px;
+      height: 47px;
+      &-button {
+        padding: 4px;
+        background-color: rgb(243, 246, 249);
+        margin: 4px;
+      }
+    }
+    &-avatar {
+      width: 100%;
+      height: 100%;
+    }
+    &-warning {
+      color: $notification-counter;
+    }
+  }
+  .categories {
+    padding: 16px 0;
+    &-list {
+      color: $breadcrumb-second;
+      font-size: 13px;
+      padding-left: 12px;
+      padding-right: 16px;
+    }
+    &-item {
+      padding: 4px 0;
+    }
+    &-link {
+      color: inherit;
+      text-decoration: none;
+      display: flex;
+      justify-content: space-between;
+    }
+    &-all {
+      color: $breadcrumb-second;
+      &-container {
+        margin: 10px 0;
+        text-align: center;
+      }
+    }
+  }
+  .reviews {
+    padding-right: 16px;
+    padding-bottom: 16px;
+    &-item {
+      padding: 16px;
+      border: 1px dashed $border-color;
+      display: flex;
+      color: $breadcrumb-second;
+      margin: 10px 0;
+      &-img {
+        width: 48px;
+        height: 48px;
+        border-radius: 5px;
+        background-color: $border-color;
+      }
+    }
+    &-text {
+      font-style: italic;
+    }
+    &-author {
+      text-align: right;
+    }
+    &-info {
+      padding-left: 15px;
+    }
+    &-rating {
+      display: flex;
+      color: $pending;
+      font-size: 12px;
+      padding: 5px 0;
+    }
+  }
+  .customer {
+    padding-right: 16px;
+    &-total {
+      display: flex;
+      background-color: $border-color;
+      padding: 8px 16px;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 3px;
+      .stars {
+        &-container {
+          color: $pending;
+          display: flex;
+          align-items: center;
+        }
+      }
+      &-text {
+        color: $breadcrumb-second;
+        text-align: center;
+        padding-top: 10px;
+      }
+    }
+    &-progress {
+      &-container {
+      }
+      &-line {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3px 0;
+        .line {
+          &-visual {
+            width: 140px;
+            height: 5px;
+            background-color: $progress;
+            border-radius: 3px;
+            &-bar {
+              height: 100%;
+              border-radius: 3px;
+              &.success {
+                background-color: $success;
+              }
+              &.failure {
+                background-color: $failure;
+              }
+              &.pending {
+                background-color: $pending;
+              }
+            }
+          }
+          &-score {
+            color: $breadcrumb-second;
+          }
+        }
+      }
+    }
+  }
+  .invite {
+    &-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 16px;
+      margin-right: 16px;
+      margin-top: 32px;
+      border-radius: 5px;
+      align-items: center;
+      background-color: rgb(243, 246, 249);
+    }
+    &-img {
+      width: 94px;
+      height: 65px;
+    }
+    &-title {
+      font-size: 16px;
+      padding-top: 20px;
+      font-weight: 500;
+      padding-bottom: 5px;
+    }
+    &-text {
+      font-size: 13px;
+      text-align: center;
+      color: $breadcrumb-second;
+      padding-bottom: 20px;
+    }
+    &-button {
+      display: flex;
+      height: 37px;
+      align-items: center;
+      background-color: $link;
+      padding-right: 16px;
+      border-radius: 37px;
+      color: $white;
+    }
+    &-icon {
+      &-container {
+        background-color: rgba(255, 255, 255, 0.1);
+        width: 35px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 37px;
+        margin-right: 10px;
+        font-size: 16px;
+      }
+    }
+  }
+}

@@ -1,0 +1,123 @@
+@import "../variables.scss";
+
+.recent {
+  .visits {
+    margin: 0 12px;
+    background-color: $white;
+    box-shadow: 0 1px 2px rgb(56 65 74 / 15%);
+    border-radius: 5px;
+    flex-basis: 40%;
+    margin-bottom: 24px;
+    &-top {
+      display: flex;
+      flex: 1;
+      justify-content: space-between;
+      padding: 16px;
+    }
+    &-content {
+      padding: 10px;
+    }
+    &-img {
+      width: 100%;
+      max-height: 300px;
+    }
+  }
+  .orders {
+    margin: 0 12px;
+    background-color: $white;
+    box-shadow: 0 1px 2px rgb(56 65 74 / 15%);
+    border-radius: 5px;
+    margin-bottom: 24px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    .generate {
+      padding: 4px 8px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      color: $cian;
+      background-color: rgba(41, 156, 219, 0.1);
+      border-radius: 3px;
+      &:hover {
+        background-color: $cian;
+        color: $white;
+      }
+      &-text {
+        font-size: 10px;
+        padding-left: 5px;
+      }
+    }
+    &-table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 700px;
+      &-container {
+        width: 100%;
+        overflow-x: scroll;
+        flex: 1;
+      }
+      th {
+        padding: 12px;
+        background-color: $border-color;
+        color: $breadcrumb-second;
+        font-weight: 600;
+        font-size: 14px;
+      }
+      td {
+        padding: 12px;
+        white-space: nowrap;
+      }
+      .order {
+        &-id {
+          color: $link;
+          text-decoration: none;
+          font-weight: 500;
+        }
+        &-customer {
+          display: flex;
+          align-items: center;
+          &-img {
+            width: 32px;
+            height: 32px;
+            border-radius: 100%;
+          }
+          &-name {
+            flex-grow: 1;
+            padding-left: 5px;
+          }
+        }
+        &-amount {
+          color: $success;
+        }
+        &-status {
+          padding: 3px 6px;
+          font-size: 10px;
+          font-weight: 600;
+          border-radius: 3px;
+          &.success {
+            color: $success;
+            background-color: rgba(10, 179, 156, 0.1);
+          }
+          &.pending {
+            background-color: rgba(247, 184, 75, 0.1);
+            color: $pending;
+          }
+          &.unpaid {
+            background-color: rgba(240, 101, 72, 0.1);
+            color: $notification-counter;
+          }
+        }
+        &-rating {
+          &-container {
+            font-weight: 500;
+          }
+        }
+        &-votes {
+          color: $breadcrumb-second;
+          font-size: 11px;
+        }
+      }
+    }
+  }
+}

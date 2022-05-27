@@ -1,0 +1,21 @@
+{
+  "name": "test-task",
+  "version": "0.1.0",
+  "scripts": {
+    "start": "webpack-cli serve --mode development --open",
+    "build": "webpack --mode production"
+  },
+  "dependencies": {
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "remixicon": "^2.5.0",
+    "sass": "^1.52.1",
+    "sass-loader": "^13.0.0",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.0"
+  },
+  "devDependencies": {
+    "style-loader": "^3.3.1"
+  }
+}

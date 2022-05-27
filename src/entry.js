@@ -1,0 +1,10 @@
+import "./style.scss";
+import "./Menu/styles.scss";
+import "./Header/styles.scss";
+import "./Breadcrumbs/styles.scss";
+import "./Content/styles.scss";
+import "./Graph/styles.scss";
+import "./Selling/styles.scss";
+import "./Recent/styles.scss";
+import "./Footer/styles.scss";
+import "./Rightbar/styles.scss";
